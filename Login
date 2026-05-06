@@ -1,0 +1,19 @@
+def tela_login():
+  print("Tela de login")
+
+  email = input("Email: ")
+  senha = input("Senha: ")
+
+# Condições do email
+if "@" in email and ".com" in email:
+  print("Acesso permitido")
+else:
+  print("Acesso negado")
+  return False
+
+
+#Condições da senha
+if len(senha) == 8:
+  print("Senha valida")
+else:
+  print("Senha invalida")
